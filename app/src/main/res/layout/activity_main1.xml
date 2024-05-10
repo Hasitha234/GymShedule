@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/exercise"
         android:layout_width="228dp"
         android:layout_height="156dp"
         android:layout_marginStart="65dp"
@@ -65,13 +65,13 @@
         android:text="Days of Exercising"
         android:textColor="@color/black"
         android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toTopOf="@+id/days"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/exercise" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/days"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -90,13 +90,13 @@
         android:text="Starting Date"
         android:textColor="@color/black"
         android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+        app:layout_constraintBottom_toTopOf="@+id/date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/days" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -105,7 +105,7 @@
         tools:layout_editor_absoluteY="572dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
