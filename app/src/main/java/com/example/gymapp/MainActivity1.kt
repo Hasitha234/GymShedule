@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.privacysandbox.tools.core.validator.ValidationResult
+import com.example.gymapp.database.DatabaseHelper
 import com.example.gymapp.models.FormData
 import com.example.gymapp.models.validation.validationResuls
 import java.text.ParseException
@@ -22,6 +23,7 @@ class MainActivity1 : AppCompatActivity() {
     private lateinit var days: EditText
     private lateinit var date: EditText
     private lateinit var submit: Button
+    var dbHandler : DatabaseHelper ?= null
 
     private var count = 0
 
@@ -33,6 +35,11 @@ class MainActivity1 : AppCompatActivity() {
         days = findViewById(R.id.days)
         date = findViewById(R.id.date)
         submit = findViewById(R.id.submit)
+
+        dbHandler = DatabaseHelper(this)
+        var isEditMode : Boolean = false
+
+        if()
 
         // Setting up the DatePickerDialog
         val calendar = Calendar.getInstance()

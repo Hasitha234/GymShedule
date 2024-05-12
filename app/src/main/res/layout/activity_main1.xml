@@ -7,11 +7,6 @@
     android:background="#818274"
     tools:context=".MainActivity1">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
